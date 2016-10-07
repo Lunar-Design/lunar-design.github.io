@@ -1,63 +1,55 @@
+
 <!doctype html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <title>Nex</title>
-    <link rel='stylesheet' href='reset.css'>
-    <link rel='stylesheet' href='style.css'>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Nex</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="iCan Web Design">
+        <meta name="description" content="Nex - Site de filmes e séries">
+        <meta name="keywords" content="nex, filmes, series, gratis, comedia, acao, suspense, terror, romance, guerra, ficcao cientifica, aventura, animacao">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+        <!--search-box-->
+		<meta name="text:Search Label" content="" />
+        <!--end-->
+        <script src="effects.js"></script>
+	</head>
 
-    <script>
-
-        var nw = require('nw.gui');
-        var win = nw.Window.get();
-        win.isMaximized = false;
-
-    </script>
-
-    </head>
-<body>
-
-    <header>
-        <ul>
-            <li><a href='#' title='Minimize' id='windowControlMinimize'></a></li><!--
-         --><li><a href='#' title='Maximize' id='windowControlMaximize'></a></li><!--
-         --><li><a href='#' title='Close'    id='windowControlClose'   ></a></li>
-            </ul>
+	<body onError="onErrorLoad()">
+    	<header>
+            <img id="genreButton" onClick="openMenu()" src="menu-icon.png" alt="Menu">
+            <img id="backToGenreButton" onClick="exitMenu()" src="menu-icon.png" alt="Voltar à navegação">
+        	<a href="index.html"><img src="logo.png" alt="Logo" id="logo"></a>
+            <img id="searchIcon" src="search-icon.png" alt="Lupa de pesquisa" onClick="openSearchBox()">
+            <img id="backToSearchIcon" src="search-icon.png" alt="Lupa de pesquisa" onClick="exitSearchBox()">
         </header>
-
-    <script>
-
-        // Min
-        document.getElementById('windowControlMinimize').onclick = function()
-        {
-            win.minimize();
-        };
-
-        // Close
-        document.getElementById('windowControlClose').onclick = function()
-        {
-            win.close();
-        };
-
-        // Max
-        document.getElementById('windowControlMaximize').onclick = function()
-        {
-            if (win.isMaximized)
-                win.unmaximize();
-            else
-                win.maximize();
-        };
-
-        win.on('maximize', function(){
-            win.isMaximized = true;
-        });
-
-        win.on('unmaximize', function(){
-            win.isMaximized = false;
-        });
-
-
-    </script>
-
-    </body>
+        <div id="menu">
+            <div class="menu-links"><a href="index.html"><p>Início</p></a></div>
+        	<div class="menu-links"><a href="breve.html"><p>Em Breve</p></a></div>
+            <div class="menu-links"><a href="series.html"><p>Séries</p></a></div>
+            <div class="menu-links"><a href="acao.html"><p>Ação</p></a></div>
+            <div class="menu-links"><a href="animacao.html"><p>Animação</p></a></div>
+            <div class="menu-links"><a href="comedia.html"><p>Comédia</p></a></div>
+            <div class="menu-links"><a href="ficao-cientifica.html"><p>Ficção Científica</p></a></div>
+            <div class="menu-links"><a href="guerra.html"><p>Guerra</p></a></div>
+            <div class="menu-links"><a href="romance.html"><p>Romance</p></a></div>
+            <div class="menu-links"><a href="suspense.html"><p>Suspence</p></a></div>
+            <div class="menu-links"><a href="terror.html"><p>Terror</p></a></div>
+            <div class="other-links"><a href="feedback.html"><p>Feedback</p></a></div>
+            <div class="other-links"><a onClick="openAboutDialogBox()"><p id="aboutLink">Sobre</p></a></div>
+        </div>
+        <iframe src="index-iframe/index.html" style="width:100%;height:100vh;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+        <div id="sobre">
+        	<img onClick="exitAboutDialogBox()" id="exitDialogButton" src="fechar-dialogo.png" alt="Fechar caixa de diálogo sobre o aplicativo">
+            <img id="logoOnDialogBox" src="logo.png" alt="Logo">
+            <p style="position: fixed; margin-top: 145px; color: #fff; font-size: 17px; margin-left: 167px;">Versão 1.0</p>
+        </div>
+        <form onsubmit="return tagSearch(this)" style="position: fixed; right: 0%;" action="404.html" method="get">
+    		<input id="search-input" placeholder="O que você procura?" type="text" name="tag" onfocus="if (this.value == '{text:Search Label}') {this.value=''}" onblur="if (this.value == '')">
+		</form>
+        <style type="text/css">body{background-color: #2E2E2E;}</style>
+        <audio autoplay><source src="Open Nex Audio.m4a" type="audio/mp4"></audio>
+	</body>
 </html>
