@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(fonts/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(fonts/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+::-webkit-scrollbar-track {background-color: #505050;} /*Fundo*/
+::-webkit-scrollbar {width: 8px; background: #333;} /*Barra, width*/
+::-webkit-scrollbar-thumb {background: #333;} /*Barra*/
+*{
+	margin:0px auto;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	background-color:#505050;
+	color:#fff;
+	-webkit-touch-callout: none;
+   	-webkit-user-select: none;
+   	-khtml-user-select: none;
+   	-moz-user-select: none;
+   	-ms-user-select: none;
+   	user-select: none;
+}
+#macintosh_header{
+	width:100%;
+	height:38px;
+}
+header img{
+	position:fixed;
+	width:30px;
+	height:30px;
+	margin-top:3px;
+	left:50%;
+	margin-left:-15px;
+	opacity:0.7;
+}
+/*
+#close{
+	background-color: #E94343;
+	margin-left:12px;
+}
+#minimize{
+	background-color: #FFB700;
+}
+#maximize{
+	background-color: #00C200;
+}
+.control_window_buttons{
+	position:relative;
+	width:12px;
+	height:12px;
+	border-radius:11px 11px 11px 11px;
+	margin-left:6px;
+	margin-top:13px;
+	float:left;
+	border:1px solid #ccc;
+}
+*/
+.blank{
+	width:100%;
+	height:58px;
+}
