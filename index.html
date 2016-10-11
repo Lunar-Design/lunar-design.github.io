@@ -3,11 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <title>Movie</title>
-
   <link href="video-js.css" rel="stylesheet" type="text/css">
-
   <script src="video.js"></script>
-
   <!-- Set the location of the flash SWF -->
   <script>
     videojs.setGlobalOptions({
@@ -16,13 +13,10 @@
       }
     });
   </script>
-
 </head>
-
       <style type="text/css">
       body { margin: 0px auto; }
       </style>
-
 <body>
   <!-- NOTE: we have to disable native Text Track support for the HTML5 tech,
              since even HTML5 video players with native Text Track support
@@ -30,13 +24,7 @@
              useful way! -->
   <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" autoplay="true"
       data-setup='{ "html5" : { "nativeTextTracks" : false } }'>
-
     <source src="http://download888.mediafire.com/axsiwq92b43g/1xv9p226i6y65mg/A2016-0001.mp4" type="video/mp4">
-
-    <source src="http://download888.mediafire.com/axsiwq92b43g/1xv9p226i6y65mg/A2016-0001.ogg" type="video/ogg">
-
-    <source src="http://download888.mediafire.com/axsiwq92b43g/1xv9p226i6y65mg/A2016-0001.webm" type="video/webm">
-
   </video>
 </body>
 </html>
