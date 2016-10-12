@@ -9,13 +9,7 @@
   <script src="video.js"></script>
 
   <!-- Set the location of the flash SWF -->
-  <script>
-    videojs.setGlobalOptions({
-      flash: {
-        swf: 'video-js.swf'
-      }
-    });
-  </script>
+
 
 </head>
 
@@ -28,12 +22,11 @@
              since even HTML5 video players with native Text Track support
              don't currently support 'description' text tracks in any
              useful way! -->
-  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none"
-      data-setup='{ "html5" : { "nativeTextTracks" : false } }'>
+  <video class="video-js vjs-default-skin" controls preload="none" autoplay="true"
+      data-setup='{}'>
 
-    <source src="http://download2100.mediafire.com/9ee0w45zumrg/2p1mk8moh658mm1/T2016-0002" type="video/mp4">
+    <source src="http://download2100.mediafire.com/hes3y47ph1lg/2p1mk8moh658mm1/T2016-0002.mp4" type="video/mp4">
 
   </video>
 </body>
 </html>
-
