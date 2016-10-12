@@ -9,13 +9,14 @@
   <script src="video.js"></script>
 
   <!-- Set the location of the flash SWF -->
-
-
+  <script>
+    videojs.setGlobalOptions({
+      flash: {
+        swf: 'video-js.swf'
+      }
+    });
+  </script>
 </head>
-
-      <style type="text/css">
-      body { margin: 0px auto; }
-      </style>
 
 <body>
   <!-- NOTE: we have to disable native Text Track support for the HTML5 tech,
