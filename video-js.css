@@ -1246,6 +1246,11 @@ $ie8screen: "\\0screen";
   .vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
     visibility: hidden; } 
 }
+  .video-js.vjs-default-skin {
+  width: 100%;
+  height: 100vh;
+}
+
 body { 
   margin: 0px auto; 
 }
