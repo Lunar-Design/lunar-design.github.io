@@ -1,2 +1,2 @@
-# http://lunar-design.github.io/
+# http://lunar-design.github.io
 Site repository to app
