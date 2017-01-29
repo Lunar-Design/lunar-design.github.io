@@ -1259,7 +1259,7 @@ body {
 	 height: 200px;
 	 margin-top: 18px;
 	 right: 2%;
-	 margin-left: -22px;
+	 /*margin-left: -22px;*/
 	 position: fixed;
 	 z-index:1;
 }
