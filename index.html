@@ -1,32 +1,34 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8" />
-  <title>Lunar</title>
+<?php
+$link = 'https://drive.google.com/file/d/0B6VYU2mjTdy0WVRjb1BJUU1hYXM/view';
+$api = 'http://api.getlinkdrive.com/getlink?url='.$link;
+$curl = curl($api);
+$data = json_decode($curl);
+echo "<pre>";
+print_r($data);
+echo "</pre>";
+function curl($url)
+{
+	$ch = @curl_init();
+	curl_setopt($ch, CURLOPT_URL, $url);
+	$head[] = "Connection: keep-alive";
+	$head[] = "Keep-Alive: 300";
+	$head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+	$head[] = "Accept-Language: en-us,en;q=0.5";
+	curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 6.1; 
 
-  <link href="video-js.css" rel="stylesheet" type="text/css">
+WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 
 
-  <script src="video.js"></script>
-
-  <script>
-    videojs.setGlobalOptions({
-      flash: {
-        swf: 'video-js.swf'
-      }
-    });
-  </script>
-
-</head>
-
-<body>
-
-  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" poster="http://www.odiariodonoroeste.com.br/wp-content/uploads/2016/11/horizonte-profundo-desastre-no-golfo-chamada.jpg"
-      data-setup='{}'>
-      
-	<!--Local movie-->
-
-    <source src="https://redirector.getlinkdrive.com/redirector?url=25a54c6d9b67331e692f6026f663db762ddaddf39df4e891b01d7e6a973309b7b7477a1108326cb55f9cf54d9a23d46dea910f200cb2e82e374bad3b0dfa0afe4b515171d7388a2ab8141d7f0347882ff5e1117704b022eed4fca865517b9cf75a1881bacfba7ebcdfd77c067969bf5219e5c695b59e38c53c947db7a6485c08a7fd8b86533bcac70380a6189ae8c787b63c2e051bfe01712e55221c5f805f4aa5cb122c8156b2fc3184c4cde3d62d7009deee585e7dcdf444f295d86769f62f49f695c21ed5a057217073c9c3198f0cbb8e693da3cad2098cf264748577a00212ddd577d52a5510005090103ce7aed70189a6a07549895fc606c061580dd1b976bb12d006db6e3c46d85448e66038b4611b3cf6999dbed0b415ea3cc06a1cb54af4e75573f059d8432d25ff537064fdedf0a0e43e0d39b4efca20cd2509ed9aa79874b1527c290493f0578378fcb2b27d8ca13abe72ef19eb3c8abed5149a15bfceb9a455a4df4dba79283313267089c376ca460ab0514470600106f2317c6f6b91f6c7c8157170a3c7dd2d8db556b52da1a6f952d4b39c19808446a10919e3a3a5932bbac30e549bd5dfde1b7a87a8e0c31bbd775eb673b3c23a1269d985077b5f013c2479f05c6f25daeeab7bcf463b94cb32dc9252a4c40db1b55ad04d5c1d1976c9c822509d88506a6852da95b1000e57bb83d202627522eed2df559e149d4211bb" type="video/mp4">
-
-  </video>
-</body>
-</html>
+Safari/537.36');
+	curl_setopt($ch, CURLOPT_ENCODING, 'gzip');
+	curl_setopt($ch, CURLOPT_HTTPHEADER, $head);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+	curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+	$page = curl_exec($ch);
+	curl_close($ch);
+	return $page;
+}
+?>
