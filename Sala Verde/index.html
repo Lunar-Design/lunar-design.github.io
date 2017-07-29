@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Lunar</title>
+
+  <link href="../video-js.css" rel="stylesheet" type="text/css">
+
+  <script src="../video.js"></script>
+
+  <style type="text/css">
+  <!--
+    html{
+      overflow-y:hidden;
+      overflow-x:hidden;
+        }
+  -->
+  </style>
+
+  <script>
+    videojs.setGlobalOptions({
+      flash: {
+        swf: 'video-js.swf'
+      }
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <script type="text/javascript" src="../videojs-resolution-switcher.js"></script>
+  <link href="../videojs-resolution-switcher.css" rel="stylesheet">
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none"  poster="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNjU0NTYxOF5BMl5BanBnXkFtZTgwNzgxMzMyODE@._V1_SX1500_CR0,0,1500,999_AL_.jpg"
+      data-setup='{}'>
+      
+  <!--Local movie-->
+
+  <track kind="captions" src="captions.en.vtt" srclang="en" label="Inglês" default></track>
+
+  <source src="https://lh3.googleusercontent.com/5_e4UdzOh-cs-dUfDv6Y7q6Moae7-aQvBla_oVwCE-QuJwZV_cuh4oUlvzQ0DdcspaWhC4I74DftuGMn9g=m22" type="video/mp4">
+
+  </video>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Lunar</title>
+
+  <link href="../video-js.css" rel="stylesheet" type="text/css">
+
+  <script src="../video.js"></script>
+
+  <style type="text/css">
+  <!--
+    html{
+      overflow-y:hidden;
+      overflow-x:hidden;
+        }
+  -->
+  </style>
+
+  <script>
+    videojs.setGlobalOptions({
+      flash: {
+        swf: 'video-js.swf'
+      }
+    });
+  </script>
+
+</head>
+
+<body>
+
+	<script type="text/javascript" src="../videojs-resolution-switcher.js"></script>
+	<link href="../videojs-resolution-switcher.css" rel="stylesheet">
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none"  poster="http://bocadoinferno.com.br/wp-content/uploads/2016/02/Cabin-Fever-2016D.jpg"
+      data-setup='{}'>
+      
+	<!--Local movie-->
+
+	<track kind="captions" src="captions.en.vtt" srclang="en" label="Sem Legenda" default></track>
+
+  <source src="https://lh3.googleusercontent.com/ZMyvhTIjWORTiGYPzfXTLxzBE8HtmaiWJmOHi95x-fY9wPWV2iTXkyFDyAxpiia825wLVG9eahTJ0IJGaw=m22" type="video/mp4">
+
+  </video>
+</body>
+</html>
