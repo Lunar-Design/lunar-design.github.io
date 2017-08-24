@@ -1056,7 +1056,8 @@ video::-webkit-media-text-track-display {
   -moz-box-flex: none;
   -webkit-flex: none;
   -ms-flex: none;
-  flex: none; }
+  flex: none;
+ }
 
 .vjs-playback-rate .vjs-playback-rate-value {
   font-size: 1.5em;
