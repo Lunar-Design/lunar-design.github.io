@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <title>Lunar</title>
 
-  <link href="video-js.css" rel="stylesheet" type="text/css">
+  <link href="../video-js.css" rel="stylesheet" type="text/css">
 
-  <script src="video.js"></script>
+  <script src="../video.js"></script>
 
   <style type="text/css">
   <!--
@@ -17,20 +17,28 @@
   -->
   </style>
 
+  <script>
+    videojs.setGlobalOptions({
+      flash: {
+        swf: 'video-js.swf'
+      }
+    });
+  </script>
+
 </head>
 
 <body>
 
-  <script type="text/javascript" src="videojs-resolution-switcher.js"></script>
-  <link href="videojs-resolution-switcher.css" rel="stylesheet">
-  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="true" autoplay poster="http://www.hotflick.net/flicks/2005_The_Jacket/005TJK_Adrien_Brody_099.jpg"
+  <script type="text/javascript" src="../videojs-resolution-switcher.js"></script>
+  <link href="../videojs-resolution-switcher.css" rel="stylesheet">
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="true" autoplay poster="../loading.svg"
       data-setup='{}'>
       
   <!--Local movie-->
 
-  <track kind="captions" src="" srclang="pt" label="Sem legenda" default></track>
+  <track kind="captions" src="" srclang="pt" label="Sem Legendas" default></track>
 
-  <source src="https://lh3.googleusercontent.com/tcut2ldDUNZlRFt-YZnN73B9wXzsK226_ncqAX8Z3TJRJ8Jis04wsSACvEza35QqIeKlEfR41yUTLjWp1FDUCDGYIhEUYse7oHqfbopt1ehfnhoFaBNofidYfH7f_IoGspLFR0_GoMvQY5fB0Z9Ry0vEfiFTKSFELcPo5NIim-J3pEHfkY2lWWQOrVkWRrlSl5D67M4Wyf280CxRwklnoeeLzp7r-dmf_p2HWAG9oRFm3-5MpUPc5x4O-jwnXfmh8dHLAC4_pkF1C3Uft1arZDX8TAbUtv9nH5i8UPsrpiIpFMi8QR_zMsfdXq1GxlcUUE_nkJERl-elGh1qI6RieYM7w1Gf1Kh-RXH3nZTiLxmCoUcMm7v4qkMrO1rm0Ue7wa--hYOhdoXjYLi8FlpW0ht0QzKvrHvNvrbALPO2pnpAs0cSUGfGb0CmiObqGi7iSPbk9GUDUxSGRjm8UTfV7_76LMrrXsBVttFQZU3qogRpWljcYp_A_4Zagfr_nZ_4dddl5Tm2nNvW0DfJAMZlBCR0wfleb7-68j366VeobJZx84ivdSw4S7kW_YU0cTiEwPhErByb-CShxchR6VgTSXbnMr7wytxAZDegUMQ5R6vO=m22" type="video/mp4">
+  <source src="https://lh3.googleusercontent.com/KE9qOgfNJSKcYUAyl1B8lL-WLRsv4Nu7Bbqdjc-2XMET_YLm0lrp8PdT6Fit8dbaZ03-2tWa_8cESb1wT3JBfaPJ_FKrX6CzVtK_Hy1AYnbkTdkucNozkHMcE1OujFxUGs2DKqcpclR7m7x9kD-_mKzld8lT3oWdnJAI7k0bFxsWGVw0m8kCsVavHsigg_gQ3mCQ0g-2v5PZyO6Q87_oIeaySkpjR3uGpsxxrEvJtnTb-Mv8zBJ7iSONH3C2y4LzR0HWT8lnqnWyAybM3u0oT8VKrJAwxe8e0GQ52p9N7FE7HYJumVh0plXojW7XKblJV9LfXkVd5OLD27q6Yd2Hyd5bHw5ku386VDK1PrTymsx3xXum16fUoDnTgf7lVej0CWDJQ7BGGFjpzHqe0PaYneq9ZlaZOHZ4zLZjdAsV5nXsI0ttah3caEy45HsGJkxWgzZbw6cMXa-_z5qV1c9A8pxF4A1FkxwSf5QdbK2MyPSFVTAGNh4PLrlsO7sl6i9nCcE45VnZR97-LjluNabrsh_9cTyTOJQH_vK6mnE2OabNyjgOalgDPa6WqTXsmvlAiMcf4-Hqq1KfURjpvG8ZjKLAdnxip0ViBCeDw2_FLYLrmOoMc0xn=m22" type="video/mp4">
 
   </video>
 </body>
