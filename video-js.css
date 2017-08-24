@@ -1048,13 +1048,16 @@ video::-webkit-media-text-track-display {
   -webkit-transform: translateY(-1.5em);
   transform: translateY(-1.5em); }
 
+/*tirar botão fullscreen*/
+
 .video-js .vjs-fullscreen-control {
   cursor: pointer;
   -webkit-box-flex: none;
   -moz-box-flex: none;
   -webkit-flex: none;
   -ms-flex: none;
-  flex: none; }
+  flex: none;
+  display: none; }
 
 .vjs-playback-rate .vjs-playback-rate-value {
   font-size: 1.5em;
@@ -1089,6 +1092,8 @@ video::-webkit-media-text-track-display {
   vertical-align: middle;
   width: 100%; }
 
+/* Loading do player
+
 .vjs-loading-spinner {
   display: none;
   position: absolute;
@@ -1121,6 +1126,8 @@ video::-webkit-media-text-track-display {
   border: inherit;
   border-color: transparent;
   border-top-color: white; }
+
+*/
 
 .vjs-seeking .vjs-loading-spinner:before,
 .vjs-seeking .vjs-loading-spinner:after,
