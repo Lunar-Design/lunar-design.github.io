@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Lunar</title>
+
+  <link href="video-js.css" rel="stylesheet" type="text/css">
+
+  <script src="video.js"></script>
+
+  <style type="text/css">
+  <!--
+    html{
+      overflow-y:hidden;
+      overflow-x:hidden;
+        }
+  -->
+  </style>
+
+</head>
+
+<body>
+
+  <script type="text/javascript" src="videojs-resolution-switcher.js"></script>
+  <link href="videojs-resolution-switcher.css" rel="stylesheet">
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="true" autoplay poster="loading.svg"
+      data-setup='{}'>
+      
+  <track kind="captions" src="" srclang="pt" label="Sem Legendas" default></track>
+
+  <!--Qualidade 720p m22 "link primário"-->
+
+  <source src="https://lh3.googleusercontent.com/uaxPlB_5aZnPlNpTgLGyrUrZqqR3W274pQ4_fCLTB1DsCmEBgtQ4_0XyMXuY_Vl-j2k6zJMxbfEy3M4M_WY596LQ_kkFgX6k1OFF8Xm_5_tW7xQKDhpfO-4F04N-9QxlTJ8-TbYUWhc5DGRj-tRTDPf3jFXaJMLicpmxSQLPIGDpoifuBkoEVrN0JnM7IZzajpRJW81CvXYinQaO9OLoeZiiuox2G80k0u0agj-zZxqqaTk4WZ51cG4y9mj29Zu6gYtlGM1sjNuQ_4sTq8jA1SqhgTeuJdAmcCsLiZBarLEI47VEA3fsWubVJ_Zw0py5sCFsQiPFQeurQu2SGLLeBaMDEmeawNgNeZ6UWu0nRgj9OdebAqi8WO3cOVaGfVKYp7bdx9IlMJRHrFk-onNx4dobUq084069MR48Ob8EOjctCswxeTDF8433lN6Fq2pD22rJNJSO5YoFI9S8aNQSQh0a6vVQwPrMzIUNAJn4qBYpN9zdxWWhbEZ12g8oBr0oM-Y8LZb9--oDoJLdg9HbLVK-UK3YIlDpYqCnZpWSHKWx5RYU2A793Nhl0HhzRHDHA9ryRiPgPunaUZQWCmU_UtFUsXw2m28x37lbb73r33nYzQAXrHbi=m22" type='video/mp4' label='720p' />
+
+  <!--Qualidade 1080p m37-->
+
+  <source src="https://lh3.googleusercontent.com/uaxPlB_5aZnPlNpTgLGyrUrZqqR3W274pQ4_fCLTB1DsCmEBgtQ4_0XyMXuY_Vl-j2k6zJMxbfEy3M4M_WY596LQ_kkFgX6k1OFF8Xm_5_tW7xQKDhpfO-4F04N-9QxlTJ8-TbYUWhc5DGRj-tRTDPf3jFXaJMLicpmxSQLPIGDpoifuBkoEVrN0JnM7IZzajpRJW81CvXYinQaO9OLoeZiiuox2G80k0u0agj-zZxqqaTk4WZ51cG4y9mj29Zu6gYtlGM1sjNuQ_4sTq8jA1SqhgTeuJdAmcCsLiZBarLEI47VEA3fsWubVJ_Zw0py5sCFsQiPFQeurQu2SGLLeBaMDEmeawNgNeZ6UWu0nRgj9OdebAqi8WO3cOVaGfVKYp7bdx9IlMJRHrFk-onNx4dobUq084069MR48Ob8EOjctCswxeTDF8433lN6Fq2pD22rJNJSO5YoFI9S8aNQSQh0a6vVQwPrMzIUNAJn4qBYpN9zdxWWhbEZ12g8oBr0oM-Y8LZb9--oDoJLdg9HbLVK-UK3YIlDpYqCnZpWSHKWx5RYU2A793Nhl0HhzRHDHA9ryRiPgPunaUZQWCmU_UtFUsXw2m28x37lbb73r33nYzQAXrHbi=m37" type='video/mp4' label='1080p'/>
+
+  <!--Qualidade 360p m18-->
+
+  <source src="https://lh3.googleusercontent.com/uaxPlB_5aZnPlNpTgLGyrUrZqqR3W274pQ4_fCLTB1DsCmEBgtQ4_0XyMXuY_Vl-j2k6zJMxbfEy3M4M_WY596LQ_kkFgX6k1OFF8Xm_5_tW7xQKDhpfO-4F04N-9QxlTJ8-TbYUWhc5DGRj-tRTDPf3jFXaJMLicpmxSQLPIGDpoifuBkoEVrN0JnM7IZzajpRJW81CvXYinQaO9OLoeZiiuox2G80k0u0agj-zZxqqaTk4WZ51cG4y9mj29Zu6gYtlGM1sjNuQ_4sTq8jA1SqhgTeuJdAmcCsLiZBarLEI47VEA3fsWubVJ_Zw0py5sCFsQiPFQeurQu2SGLLeBaMDEmeawNgNeZ6UWu0nRgj9OdebAqi8WO3cOVaGfVKYp7bdx9IlMJRHrFk-onNx4dobUq084069MR48Ob8EOjctCswxeTDF8433lN6Fq2pD22rJNJSO5YoFI9S8aNQSQh0a6vVQwPrMzIUNAJn4qBYpN9zdxWWhbEZ12g8oBr0oM-Y8LZb9--oDoJLdg9HbLVK-UK3YIlDpYqCnZpWSHKWx5RYU2A793Nhl0HhzRHDHA9ryRiPgPunaUZQWCmU_UtFUsXw2m28x37lbb73r33nYzQAXrHbi=m18" type='video/mp4' label='360p' />
+
+  <script>
+  videojs('example_video_1').videoJsResolutionSwitcher()
+  </script>
+
+  </video>
+  
+</body>
+
+</html>
