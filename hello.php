@@ -3,9 +3,9 @@
   <meta charset="utf-8" />
   <title>Lunar</title>
 
-  <link href="../video-js.css" rel="stylesheet" type="text/css">
+  <link href="video-js.css" rel="stylesheet" type="text/css">
 
-  <script src="../video.js"></script>
+  <script src="video.js"></script>
 
   <style type="text/css">
   <!--
@@ -20,9 +20,9 @@
 
 <body>
 
-  <script type="text/javascript" src="../videojs-resolution-switcher.js"></script>
-  <link href="../videojs-resolution-switcher.css" rel="stylesheet">
-  <video id="video" class="video-js vjs-default-skin" controls preload="true" autoplay poster="../loading.svg"
+  <script type="text/javascript" src="videojs-resolution-switcher.js"></script>
+  <link href="videojs-resolution-switcher.css" rel="stylesheet">
+  <video id="video" class="video-js vjs-default-skin" controls preload="true" autoplay poster="loading.svg"
       data-setup='{}'>
       
   <track kind="captions" src="" srclang="pt" label="Sem Legendas" default></track>
