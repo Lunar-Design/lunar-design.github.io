@@ -4,46 +4,42 @@
   <meta charset="utf-8" />
   <title>Lunar</title>
 
-  <link href="video-js.css" rel="stylesheet" type="text/css">
-
-  <script src="video.js"></script>
-
   <style type="text/css">
-  <!--
+
     html{
       overflow-y:hidden;
       overflow-x:hidden;
         }
-  -->
+  
   </style>
 
 </head>
 
 <body>
 
+  <link href="video-js.css" rel="stylesheet" type="text/css">
+  <script src="video.js"></script>
   <script type="text/javascript" src="videojs-resolution-switcher.js"></script>
   <link href="videojs-resolution-switcher.css" rel="stylesheet">
-  <video id="video" class="video-js vjs-default-skin" controls preload="true" autoplay poster="loading.svg"
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" autoplay poster="loading.svg"
       data-setup='{}'>
       
   <track kind="captions" src="" srclang="pt" label="Sem Legendas" default></track>
 
   <!--Qualidade 720p m22 "link primário"-->
 
-  <source src="https://lh3.googleusercontent.com/6v4Vx6lrljoAQEQRH5XEajmS3VkU8VUiStkQfy00AiklusRwxqLcMUQ6Wya_6hUk2hZiw1Bt3lcPYf7Mf3aHJ1kNANYCxT0Hyuz7N6HRloGZFrDpeTr9CRzN2_pgLt_oSaXRgng1qRg_ywZWoqR32HUWVeai3g9ElQUzI-YWqY2ci4UUmuNojNqTuFGESpy4vcnOoyOgc5NPRAsjSEYJT8u-D8c787nvR2CK6g6hqK8al3DnZnpGYzPmX33T94PEC8AkbkmmA29V8ZebdcHKbGKdiq2g9Zf-NsKtfQOh6cyEJ_qO3zJILuTTvUfPa9wCvTME_JalYjeHHJMU5BaZKNZJb6wSVQUH6dJ-ToxyETDuar0zPLoSRkJueSCwVcdYUG204_o8_WRvuIWs5I0pmEmqngvaJxO3jugf3Q0CoyrSl0Ne_3BQck6_2yjJDAT6UzfB07hemNFLH1ZzPspYv4L0-0jrpjVfHxN4TVC70wONxUX8WfTDSArPG3QX8GStk-_A5-wM44d6MxDfjVUsscoEtpanVtepYKo3i5x565Uk4v4H92_vGcfuWrbD7lJKnk-fFou6qaSTZ2GlCdS9wzCqk80NbmJdEffk9vZhzDsuSVNqC1iN=m22" type='video/mp4' label='720p' />
+  <source src="https://lh3.googleusercontent.com/puAfJGcyiXAiJi3f-Z-ZfEHyXnblhKQapa5dGlCkZXroYbck0F9UzYj_b3U9KE9iO1k0-Jp61GnYlPhRpvMP0B24Xa1v6-qhB4W2QP7r2_3T5cVucbriqYwvoaEVMNqIVbqUEHuR0wHMv5e35kbsUwXdF-8dlOumMxywLGKrqGztpxfCuUoVS1YaWr7-xxJtDfsDG9h11qQnVcvIt75-V_WNNdADK0lYwgwFIWh-s_Ihu0zR92x3-PxGdlA07nFR8GH1KQgOkrPDiTQYW49A_yhxVyLzOYZTWgRAXE4-cMI1m8wa7V66drZJnPCRpxYtN6lUMRWPOYzgmMFvkXOr_cXQ7OPmX__NHtOur3-S5Hf_1QMpW20uDwQQ7Z7Ah-OihV-OKsaZxWEAyrZkVzSLsUiyNZng2MnMgn5WhQBvjTDcWsBqmLU39J8R0D1uU1Zz9lyTNSxZW3g3677CMnqWYZwDXku57Qb0-o9hPaHzjWLtEdmGoBuH9aJ31h3VlefDUP748ag9s7Lv4l0UtKhmoXIOzIlBRSjkPPu73vlswVpfmyUs-LIZRBYUvIvw4oEi-_gtzpWdDQLu5KdnaZiA7qdDLoW1grzqm4qMyGWmtHkGFXrtLCw=m22" type='video/mp4' label='720p' />
 
-  <!--Qualidade 360p m18-->
+  <!--Qualidade 1080p m37-->
 
-  <source src="https://lh3.googleusercontent.com/6v4Vx6lrljoAQEQRH5XEajmS3VkU8VUiStkQfy00AiklusRwxqLcMUQ6Wya_6hUk2hZiw1Bt3lcPYf7Mf3aHJ1kNANYCxT0Hyuz7N6HRloGZFrDpeTr9CRzN2_pgLt_oSaXRgng1qRg_ywZWoqR32HUWVeai3g9ElQUzI-YWqY2ci4UUmuNojNqTuFGESpy4vcnOoyOgc5NPRAsjSEYJT8u-D8c787nvR2CK6g6hqK8al3DnZnpGYzPmX33T94PEC8AkbkmmA29V8ZebdcHKbGKdiq2g9Zf-NsKtfQOh6cyEJ_qO3zJILuTTvUfPa9wCvTME_JalYjeHHJMU5BaZKNZJb6wSVQUH6dJ-ToxyETDuar0zPLoSRkJueSCwVcdYUG204_o8_WRvuIWs5I0pmEmqngvaJxO3jugf3Q0CoyrSl0Ne_3BQck6_2yjJDAT6UzfB07hemNFLH1ZzPspYv4L0-0jrpjVfHxN4TVC70wONxUX8WfTDSArPG3QX8GStk-_A5-wM44d6MxDfjVUsscoEtpanVtepYKo3i5x565Uk4v4H92_vGcfuWrbD7lJKnk-fFou6qaSTZ2GlCdS9wzCqk80NbmJdEffk9vZhzDsuSVNqC1iN=m18" type='video/mp4' label='360p'/>
+  <source src="https://lh3.googleusercontent.com/puAfJGcyiXAiJi3f-Z-ZfEHyXnblhKQapa5dGlCkZXroYbck0F9UzYj_b3U9KE9iO1k0-Jp61GnYlPhRpvMP0B24Xa1v6-qhB4W2QP7r2_3T5cVucbriqYwvoaEVMNqIVbqUEHuR0wHMv5e35kbsUwXdF-8dlOumMxywLGKrqGztpxfCuUoVS1YaWr7-xxJtDfsDG9h11qQnVcvIt75-V_WNNdADK0lYwgwFIWh-s_Ihu0zR92x3-PxGdlA07nFR8GH1KQgOkrPDiTQYW49A_yhxVyLzOYZTWgRAXE4-cMI1m8wa7V66drZJnPCRpxYtN6lUMRWPOYzgmMFvkXOr_cXQ7OPmX__NHtOur3-S5Hf_1QMpW20uDwQQ7Z7Ah-OihV-OKsaZxWEAyrZkVzSLsUiyNZng2MnMgn5WhQBvjTDcWsBqmLU39J8R0D1uU1Zz9lyTNSxZW3g3677CMnqWYZwDXku57Qb0-o9hPaHzjWLtEdmGoBuH9aJ31h3VlefDUP748ag9s7Lv4l0UtKhmoXIOzIlBRSjkPPu73vlswVpfmyUs-LIZRBYUvIvw4oEi-_gtzpWdDQLu5KdnaZiA7qdDLoW1grzqm4qMyGWmtHkGFXrtLCw=m37" type='video/mp4' label='1080p'/>
 
-  <source src="https://lh3.googleusercontent.com/6v4Vx6lrljoAQEQRH5XEajmS3VkU8VUiStkQfy00AiklusRwxqLcMUQ6Wya_6hUk2hZiw1Bt3lcPYf7Mf3aHJ1kNANYCxT0Hyuz7N6HRloGZFrDpeTr9CRzN2_pgLt_oSaXRgng1qRg_ywZWoqR32HUWVeai3g9ElQUzI-YWqY2ci4UUmuNojNqTuFGESpy4vcnOoyOgc5NPRAsjSEYJT8u-D8c787nvR2CK6g6hqK8al3DnZnpGYzPmX33T94PEC8AkbkmmA29V8ZebdcHKbGKdiq2g9Zf-NsKtfQOh6cyEJ_qO3zJILuTTvUfPa9wCvTME_JalYjeHHJMU5BaZKNZJb6wSVQUH6dJ-ToxyETDuar0zPLoSRkJueSCwVcdYUG204_o8_WRvuIWs5I0pmEmqngvaJxO3jugf3Q0CoyrSl0Ne_3BQck6_2yjJDAT6UzfB07hemNFLH1ZzPspYv4L0-0jrpjVfHxN4TVC70wONxUX8WfTDSArPG3QX8GStk-_A5-wM44d6MxDfjVUsscoEtpanVtepYKo3i5x565Uk4v4H92_vGcfuWrbD7lJKnk-fFou6qaSTZ2GlCdS9wzCqk80NbmJdEffk9vZhzDsuSVNqC1iN=m22" type='video/mp4' label='Padrão'/>
-  
   <script>
-  videojs('video').videoJsResolutionSwitcher()
+  videojs('example_video_1').videoJsResolutionSwitcher()
   </script>
 
   </video>
-  
+
 </body>
 
 </html>
