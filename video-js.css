@@ -563,15 +563,12 @@ body.vjs-full-window {
 /*Modificar a Cor e outras funções da barra de menus*/
 .video-js .vjs-control-bar {
   display: none;
-  width: 60%;
+  width: 100%;
   position: absolute;
   bottom: 0;
-  left: 20%;
-  height: 4.0em;
-  margin-top: -70px;
-  top: 97%;
-  padding: 7.3px;
-  border-radius: 0px 0px 20px 20px;
+  height: 5.0em;
+  margin-top: 100%;
+  padding: 15.3px;
   background-color: #2B333F;
   background-color: rgba(15, 15, 15, 1.0); }
 
@@ -742,7 +739,7 @@ body.vjs-full-window {
 
 .video-js .vjs-load-progress {
   background: #bfc7d3;
-  background: rgba(115, 133, 159, 0.5); }
+  background: rgba(115, 133, 159, 1.0); }
 
 .video-js .vjs-load-progress div {
   background: white;
@@ -803,7 +800,7 @@ body.vjs-full-window {
   padding: 0;
   margin: 1 0.45em 0 0.45em;
   background-color: #73859f;
-  background-color: rgba(31,31,31,0.7); }
+  background-color: rgba(21, 21, 21, 1.0); }
 
 .video-js .vjs-slider:focus {
   text-shadow: 0em 0em 1em white;
@@ -1058,8 +1055,7 @@ video::-webkit-media-text-track-display {
   -moz-box-flex: none;
   -webkit-flex: none;
   -ms-flex: none;
-  flex: none;
- }
+  flex: none; }
 
 .vjs-playback-rate .vjs-playback-rate-value {
   font-size: 1.5em;
@@ -1286,6 +1282,8 @@ Download style.css | Copy style.css
  
 .vjs-menu-button-inline .vjs-menu {left: 3em}
  
+/* Tirar Big-play Bottom display: block para display:none */
+
 .video-js.vjs-paused .vjs-big-play-button,.vjs-paused.vjs-has-started.video-js .vjs-big-play-button {display: block;}
  
 .video-js .vjs-load-progress div,.vjs-seeking .vjs-big-play-button,.vjs-waiting .vjs-big-play-button {display: none!important}
@@ -1359,14 +1357,14 @@ Download style.css | Copy style.css
     right: 0;
     width: 100%;
     height: .5em;
-    top: -1.0em
+    top: -.5em
    }
  
     .video-js .vjs-progress-control .vjs-load-progress,.video-js .vjs-progress-control .vjs-play-progress,.video-js .vjs-progress-control .vjs-progress-holder {height: 100%}
  
     .video-js .vjs-progress-control .vjs-progress-holder {margin: 0}
  
-    .video-js .vjs-progress-control:hover {height: 1em;top:-1.5em}
+    .video-js .vjs-progress-control:hover {height: 1em;top:-1em}
  
   .video-js .vjs-control-bar {
     -webkit-transition: -webkit-transform .1s ease 0s;
@@ -1413,7 +1411,7 @@ Download style.css | Copy style.css
    }
  
   .video-js.vjs-live .vjs-live-control {margin-left: 1em}
- 
+   /*
   .video-js .vjs-big-play-button {
     display: none;
     top: 50%;
@@ -1433,9 +1431,9 @@ Download style.css | Copy style.css
     height: 1.4em!important;
     line-height: 1.4em!important;
     margin-top: -.7em!important
-   }
+   }*/
  
-  .video-js .vjs-menu-button-popup .vjs-menu {left: 3em}
+  .video-js .vjs-menu-button-popup .vjs-menu {left: -.3em}
  
   .video-js .vjs-menu-button-popup .vjs-menu .vjs-menu-content {
     background-color: transparent;
@@ -1460,16 +1458,11 @@ Download style.css | Copy style.css
   .video-js .vjs-control-bar2 {background-color: #000}
  
   .video-js .vjs-control-bar {
-    background-color: rgba(31,31,31,0.7)!important;
-    color: #FAFAFA;
+    background-color: rgba(31,31,31,1.0)!important;
+    color: #bdbdbe;
     font-size: 14px
    }
  
   .video-js .vjs-play-progress,.video-js .vjs-volume-level {background-color: #FF6101}
  
   .video-js .vjs-load-progress {background: rgba(255,255,255,.3)}
-
-  .vjs-caption-settings {
-  position: fixed;
-  z-index: 9999;
-}
